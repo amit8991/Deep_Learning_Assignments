@@ -1,0 +1,43 @@
+1. C
+2. C
+3. C
+4. A
+5. B
+6. C
+7. D
+8. D
+9. A,D
+10.A,B,D
+
+11. An outlier is a value that lies an abnormal distance from other values in a random sample from a population.
+ Inter Quartile Range(IQR) method for outlier detection:
+ 1.Determine the first and third quartiles. First, sort the values in ascending order. Then, split the data in half at its median. 
+ The first quartile (Q1) is the median of the lower half and the third quartile (Q3) is the median of the upper half.
+ 2.Get the interquartile range (IQR) by taking the third quartile and subtracting the first quartile from IQR=Q3−Q1.
+ 3.Calculate a lower and upper limit using the values determined in the previous steps.
+ 4.Check that values are within the determined limits. Any value less than the lower limit or greater than the upper limit is considered as an outlier.
+ 
+12. Bagging : Bagging is a way to decrease the variance in the prediction by generating additional data for training from dataset using combinations with
+ repetitions to produce multi-sets of the original data.Also known as Bootstrap Aggregation is an ensemble method. First, we create random samples of the training data set (sub sets of training data set). 
+ Then, we build a classifier for each sample. 
+ Finally, results of these multiple classifiers are combined using average or majority voting.
+ Random Forest Algorithm is an example of bagging.
+ Boosting : Boosting is an iterative technique which adjusts the weight of an observation based on the last classification.
+ Being an iterative process, it continues to add classifier learner until a limit is reached in the number of models or accuracy. 
+ Boosting has shown better predictive accuracy than bagging, but it also tends to over-fit the training data as well.
+ Ada Boost, Gradient Boosting, XGBoosting Alogorithm are example of boosting.
+ 
+13.Adjusted R-squared is used to compare the goodness-of-fit for regression models that contain differing numbers of independent variables.
+The adjusted R-squared adjusts for the number of terms in the model. Importantly, its value increases only when the new term improves the model fit more than expected by chance alone. 
+The adjusted R-squared value actually decreases when the term doesn’t improve the model fit by a sufficient amount.
+
+14.Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling.
+Normalization is good to use when you know that the distribution of your data does not follow a Gaussian distribution. 
+Standardization is another scaling technique where the values are centered around the mean with a unit standard deviation. This means that the mean of the attribute becomes zero and the resultant distribution has a unit standard deviation.
+Unlike normalization, standardization does not have a bounding range. So, even if you have outliers in your data, they will not be affected by standardization.
+
+15.Cross validation is a technique for assessing how the statistical analysis generalizes to an independent dataset.
+The purpose of cross validation is to assess how your prediction model performs with an unknown dataset. 
+Advantage : More accurate estimate of out-of-sample accuracy.
+Disadvantage : Increases Training Time
+
