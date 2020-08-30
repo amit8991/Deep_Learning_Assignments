@@ -1,0 +1,56 @@
+SQL - Worksheet-1
+
+1. A,D
+2. A,B
+3. B
+4. B
+5. A
+6. C
+7. B
+8. B
+9. B
+10. C
+
+
+11. Data-warehouse
+1.A Data Warehousing is process for collecting and managing data from varied sources to provide meaningful business insights.
+2.Data warehouses are solely intended to perform queries and analysis and often contain large amounts of historical data.
+3.The data within a data warehouse is usually derived from a wide range of sources such as application log files and transaction applications.
+4.A data warehouse centralizes and consolidates large amounts of data from multiple sources. 
+5.Its analytical capabilities allow organizations to derive valuable business insights from their data to improve decision-making.
+6.Over time, it builds a historical record that can be invaluable to data scientists and business analysts. 
+
+12. OLTP VS OLAP
+
+OLAP :
+1.Online Analytical Processing, a category of software tools which provide analysis of data for business decisions.
+2.It is characterized by a large volume of data.
+3.OLAP uses the data warehouse.
+4.Mostly select operations.
+5.The data in OLAP process might not be organized.
+6.Designed for analysis of business measures by category and attributes.
+
+OLTP :
+1.Online transaction processing shortly known as OLTP supports transaction-oriented applications.
+2.It is characterized by large numbers of short online transactions.
+3.OLTP uses traditional DBMS.
+4.Insert, Update, and Delete information from the database.
+5.The data in the OLTP database is always detailed and organized.
+6.Designed for real time business operations.
+
+
+13. Characteristics of data-warehouse
+There are three prominent data warehouse characteristics:
+1.Integrated: The way data is extracted and transformed is uniform, regardless of the original source.
+2.Time-variant: Data is organized via time-periods (weekly, monthly, annually, etc.).
+3.Non-volatile: A data warehouse is not updated in real-time. 
+It is periodically updated via the uploading of data, protecting it from the influence of momentary change.
+
+14. Star schema
+Star schema is widely used to develop or build a data warehouse and dimensional data marts.
+It includes one or more fact tables indexing any number of dimensional tables.
+The star schema is a necessary case of the snowflake schema. It is also efficient for handling basic queries.
+
+15.SETL
+SETL builds on Semantic Web (SW) standards and tools and supports developers by offering a number of powerful modules, classes, and methods for (dimensional and semantic) DW constructs and tasks.
+Thus it supports semantic data sources in addition to traditional data sources, semantic integration, and creating or publishing a semantic (multidimensional) DW in terms of a knowledge base.

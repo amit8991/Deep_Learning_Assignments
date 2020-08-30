@@ -1,0 +1,108 @@
+Python Worksheet-2
+
+1. B
+2. C
+3. A
+4. A
+5. C
+6. C
+7. A
+8. B
+9. A,B,D
+10. A,C,D
+------------------------------------------------
+11.List :
+A list is a sequence of elements in a specific order.
+List are mutable.
+List can store any type of element.
+It is defined under square brackets[].
+
+Tuple :
+Tuple is a immutable sequence in python.
+It cannot be changed or replaced since it is immutable.
+It is defined under parenthesis().
+Tuples can store any type of element.
+
+Set:
+Sets are unoreder collection of elements or unintended collection of items In python.
+Here the order in which the elements are added into the set is not fixed, it can change frequently.
+It is defined under curly braces{}
+Sets are immutable.i.e it cannot be changed or replaced.
+
+Dictionary:
+A dictionary is a mapping from keys to values where the keys can be all sorts of different objects, 
+in contrast to lists where the 'keys' can only be numbers.
+They keys of a dict are much like a set: they have no order and you can test for their existence quickly.
+
+------------------------------------------------
+12. In python , string data types are immutable.
+	Code to replace + with space
+	
+	import re
+
+	text = 'I+Love+Python'
+	text = text.replace("+"," ")
+	print(text)
+	
+------------------------------------------------
+13. he ord() function in Python accepts a string of length 1 as an argument and returns the unicode code point representation of the passed argument. 
+For example ord('B') returns 66 which is a unicode code point value of character 'B'.
+
+ We use the type() function to find the type of any variable in python.
+ 
+---------------------------------------------------------------------------------------------------
+14.Write a python program to solve a quadratic equation of the form 𝑎𝑥
+2 + 𝑏𝑥 + 𝑐 = 0. Where a, b and c are to
+be taken by user input. Handle the erroneous input, such as ‘a’ should not be equal to 0.
+
+Solution:
+import math
+
+def findRoots(a,b,c):
+    if a==0:
+        print("Invalid")
+        return -1
+    
+    d = b*b-4*a*c
+    square_root_value = math.sqrt(abs(d))
+    
+    if d > 0:
+        print("Roots are real and different")
+        print((-b+square_root_value)/(2*a))
+        print((-b-square_root_value)/(2*a))
+    elif d == 0:
+        print("Roots are real and same")
+        print(-b/(2*a))
+    else:
+        print("Roots are complex") 
+        print(- b / (2*a) , " + i", square_root_value) 
+        print(- b / (2*a) , " - i", square_root_value) 
+        
+
+a = 1
+b = 4
+c = 3
+findRoots(a, b, c) 
+
+Output:
+Roots are real and different
+-1.0
+-3.0
+
+---------------------------------------------------------------------------------------------------
+Write a python program to find the sum of first ‘n’ natural numbers without using any loop. Ask user to input
+the value of ‘n’.
+
+Solution:
+num = int(input("Enter a number to find sum of natural numbers :"))
+
+sum = (num*(num+1))/2
+
+print("Sum of  first ",num," numbers is ",sum)
+
+Output:
+Enter a number to find sum of natural numbers :6
+Sum of  first  6  numbers is  21.0
+
+
+
