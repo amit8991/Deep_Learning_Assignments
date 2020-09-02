@@ -1,0 +1,58 @@
+Deep Learning Worksheet-1
+
+1. D
+2. B
+3. C
+4. A
+5. A
+6. C
+7. B
+8. A
+9. A,B,D
+10. B
+
+11. Deep Learning :
+Deep learning is a type of machine learning (ML) and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
+Deep learning is an important element of data science, which includes statistics and predictive modeling. 
+It is extremely beneficial for collecting, analyzing and interpreting large amounts of data,deep learning makes this process faster and easier.
+
+12.Reinforcement Learning :
+Reinforcement Learning is defined as a Machine Learning method that is concerned with how software agents should take actions in an environment.
+Reinforcement Learning is a part of the deep learning method that helps you to maximize some portion of the cumulative reward.
+
+13.
+Machine Learning :
+1.ML uses types of automated algorithms which learn to predict future decisions and model functions using data fed into it.
+2.The vaious algorithms are directed by the analyst to examine the different variables in the dataset.
+3.Usually,there are a few thousand data points used for the analysis.
+4.The output is usually a numerical value like a score or classification.
+
+Deep Learning :
+1.Deep Learning interprets data features and its relationship using neural networks which pass the relevant information through several stages
+of data processing.
+2.Once they are implemented,the algorithms are usually self directed for the relevant data analysis.
+3.There are few million data points used for the analysis.
+4.The output can be anything from a score,an element,free text or sound etc.
+
+14.Perceptrons can be viewed as building blocks in a single layer in a neural network.
+A neural network is an interconnected system of perceptrons, so it is safe to say perceptrons are the foundation of any neural network.
+It is made up of four different parts:
+Input Values or One Input Layer
+Weights and Bias
+Net sum
+Activation function
+
+15.
+AI
+1.Artificial intelligence is a technology which enables a machine to simulate human behavior.
+2.In AI, we make intelligent systems to perform any task like a human.
+3.Machine learning and deep learning are the two main subsets of AI.
+4.AI is working to create an intelligent system which can perform various complex tasks.
+5.The main applications of AI are Siri, customer support using catboats, Expert System, Online game playing, intelligent humanoid robot, etc.
+
+ML:
+1.Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly.
+2.In ML, we teach machines with data to perform a particular task and give an accurate result.
+3.Deep learning is a main subset of machine learning.
+4.Machine learning is working to create machines that can perform only those specific tasks for which they are trained.
+5.The main applications of machine learning are Online recommender system, Google search algorithms, Facebook auto friend tagging suggestions, etc.
