@@ -1,0 +1,17 @@
+NLP Worksheet 1
+
+1. A,B,D
+2. B,D
+3. A,B
+4. A,B
+5. A
+6. B
+7. A,B,C
+8. A,B
+9. D
+10. B
+11. A
+12. A
+13. B
+14. B,D
+15. A
