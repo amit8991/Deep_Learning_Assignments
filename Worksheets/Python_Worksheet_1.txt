@@ -1,0 +1,92 @@
+Python WorkSheet-1
+
+1. C
+2. B
+3. C
+4. A
+5. A
+6. C
+7. A
+8. A
+9. A,C
+10. A,B
+------------------------------------------------------------------------------------
+11.Write a python program to find the factorial of a number
+
+number = int(input('Enter a number : '))
+fact = 1
+
+if(number<0):
+    print("Number is negative,no factorial exists")
+elif number==0:
+    print("Factorial is 1")
+else:
+    for i in range(1,number+1):
+        fact = fact * i;
+    print("The factorial of ",number,"is",fact)
+	
+Enter a number : 5
+The factorial of  5 is 120
+
+
+12.Write a python program to find whether a number is prime or composite.
+num = int(input("Enter number :"))
+
+if num > 1:
+    for i in range(2,num):
+        if (num % i) == 0:
+            print(num,"is not a prime number")
+            break
+        else:
+            print(num,"is a prime number")
+            break
+else:
+    print(num,"is not a prime number")
+	
+Enter number :8
+8 is not a prime number
+
+
+13.Write a python program to check whether a given string is palindrome or not
+
+str1 = 'radar'
+str1 = str1.casefold()
+rev_str =reversed(str1)
+
+if list(str1)==list(rev_str):
+    print("String is palindrome")
+else:
+    print("Strig is not palindrome")
+	
+String is palindrome
+
+
+14. Write a Python program to get the third side of right-angled triangle from two given sides
+from math import sqrt
+print("Input lengths of shorter triangle sides:")
+a = float(input("a: "))
+b = float(input("b: "))
+
+c = sqrt(a**2 + b**2)
+print("The length of the third side is", c )
+
+Input lengths of shorter triangle sides:
+a: 4
+b: 3
+The length of the third side is 5.0
+
+
+15.Write a python program to print the frequency of each of the characters present in a given string
+input_str = "This is python"
+frequencies ={}
+
+for char in input_str:
+    if char in frequencies:
+        frequencies[char]+=1
+    else:
+        frequencies[char]=1
+        
+print("The frequency of each character in '{}' is :\n {}".format(input_str,str(frequencies)))
+
+The frequency of each character in 'This is python' is :
+ {'T': 1, 'h': 2, 'i': 2, 's': 2, ' ': 2, 'p': 1, 'y': 1, 't': 1, 'o': 1, 'n': 1}
