@@ -1,0 +1,100 @@
+MACHINE-LEARNING-WORKSHEET-3
+
+1. SVM algorithm is implemented with kernel that transforms an input data space into the required form. 
+SVM uses a technique called the kernel trick in which kernel takes a low dimensional input space and transforms it into a higher dimensional space.
+
+Linear Kernel
+It can be used as a dot product between any two observations. The formula of linear kernel is K(x,xi)=sum(x∗xi).
+
+Polynomial Kernel
+It is more generalized form of linear kernel and distinguish curved or nonlinear input space. The formula for polynomial kernel is k(X,Xi)=1+sum(X∗Xi)^d.
+
+Radial Basis Function (RBF) Kernel
+RBF kernel, mostly used in SVM classification, maps input space in indefinite dimensional space. The formula for RBF kernel is K(x,xi)=exp(−gamma∗sum(x−xi^2))
+
+
+2.R-squared is a goodness-of-fit measure for linear regression models. This statistic indicates the percentage of the variance in the dependent variable that the 
+independent variables explain collectively. 
+R-squared measures the strength of the relationship between your model and the dependent variable on a convenient 0 – 100% scale.
+
+3. Total Sum of Squares(TSS):
+The total sum of squares is a variation of the values of a dependent variable from the sample mean of the dependent variable.
+Essentially, the total sum of squares quantifies the total variation in a sample.
+
+Explained Sum of Squares (ESS):
+The regression sum of squares describes how well a regression model represents the modeled data. 
+A higher regression sum of squares indicates that the model does not fit the data well.
+
+Residual Sum of Squares (RSS):
+The residual sum of squares essentially measures the variation of modeling errors.
+
+The relationship between the three types of sum of squares can be summarized by the following equation: TSS = ESS + RSS
+
+4.Gini Impurity:
+It is a metric that is used when training decision trees.
+It is measurement of the likelihood of an incorrect classification of a new instance of a random variable.
+Gini impurity is lower bounded by 0, with 0 occurring if the data set contains only one class.
+
+5. Yes.In decision trees, over-fitting occurs when the tree is designed so as to perfectly fit all samples in the training data set. 
+Thus it ends up with branches with strict rules of sparse data.This effects the accuracy when predicting samples that are not part of the training set.
+
+6.Ensemble methods is a machine learning technique that combines several base models in order to produce one optimal predictive model.
+Bagging,Boosting,Stacking and Blending are commonly used ensemble techniques.
+
+7.Bagging :
+Bagging attempts to reduce the chance overfitting complex models.
+It trains a large number of "strong" learners in parallel.
+A strong learner is a model that's relatively unconstrained.
+Bagging then combines all the strong learners together in order to "smooth out" their predictions.
+
+Boosting:
+Boosting attempts to improve the predictive flexibility of simple models.
+It trains a large number of "weak" learners in sequence.
+A weak learner is a constrained model (i.e. you could limit the max depth of each decision tree).
+Each one in the sequence focuses on learning from the mistakes of the one before it.
+Boosting then combines all the weak learners into a single strong learner.
+
+8.The out-of-bag (OOB) error is the average error for each training observations calculated using predictions from the trees that do not contain training observations in their respective bootstrap sample. 
+This allows the RandomForestClassifier to be fit and validated whilst being trained.
+
+9.K-Fold Cross-Validation is a statistical method of evaluating and comparing learning algorithms by dividing data into two segments: 
+one used to learn or train a model and the other used to validate the model.
+In k-fold cross-validation, the data is first partitioned into k equally (or nearly equally) sized segments or folds. 
+Subsequently k iterations of training and validation are performed such that within each iteration a different fold of the data is held-out for validation 
+while the remaining k − 1 folds are used for learning.
+
+10. Hyperparameter tuning is the process of determining the right combination of hyperparameters that allows the model to maximize model performance.
+Each model has its own sets of parameters that need to be tuned to get optimal output. 
+For every model, our goal is to minimize the error or say to have predictions as close as possible to actual values. 
+This is one of the cores or say the major objective of hyperparameter tuning.
+
+11. When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error.
+When using high learning rates, it is possible to encounter a positive feedback loop in which large weights induce large gradients which then induce a large update to the weights.
+If these updates consistently increase the size of the weights, then [the weights] rapidly moves away from the origin until numerical overflow occurs.
+
+12. While training our model Bias and Variance plays a key role in achieving the required accuracy of the model.
+There need to be a balance or we can say compromise between Bias and Variance, so to avoid overfitting and underfitting of the model. 
+This compromise is called Tradeoff.
+
+13.Regularization is a technique which is used to solve the overfitting problem of the machine learning models.
+There are two types of regularization as follows:
+L1 Regularization or Lasso Regularization
+L2 Regularization or Ridge Regularization
+
+14. 
+Adaboost :
+In Adaboost, ‘shortcomings’ are identified by high-weight data points.
+Adaboost increases the accuracy by giving more weightage to the target which is misclassified by the model. 
+At each iteration, Adaptive boosting algorithm changes the sample distribution by modifying the weights attached to each of the instances. 
+It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+
+Gradient Boosting:
+In Gradient Boosting, ‘shortcomings’ (of existing weak learners) are identified by gradients.
+Gradient boosting algorithm builds first weak learner and calculates the Loss Function. 
+It then builds a second learner to predict the loss after the first step. 
+The step continues for third learner and then for fourth learner and so on until a certain threshold is reached.
+
+
+15. Logistic regression is known and used as a linear classifier. 
+It is used to come up with a hyperplane in feature space to separate observations that belong to a class from all the other observations that do not belong to that class.
+ The decision boundary is thus linear.
