@@ -1,0 +1,27 @@
+MACHINE-LEARNING-WORKSHEET-4
+
+1. A
+2. D
+3. A
+4. C
+5. C
+6. C
+7. C
+8. A
+9. Gini = 1-((60/100)2+(40/100)2) = 1-(0.36+0.16) = 0.48
+	Entropy=−Alog2(B)−Blog2(A) = -(0.6* -1.32 -0.4*-0.74) = 0.97
+10.Random forest leverages the power of multiple decision trees. It does not rely on the feature importance given by a single decision tree.
+   The decision tree model gives high importance to a particular set of features. But the random forest chooses features randomly during the training process.
+11.Scaling in machine learning is one of the most critical steps during the pre-processing of data before creating a machine learning model. 
+	Scaling can make a difference between a weak machine learning model and a better one.
+	The most common techniques of feature scaling are Normalization and Standardization.
+12.Gradient descent is an optimization algorithm used to find the values of parameters (coefficients) of a function (f) that minimizes a cost function (cost).
+	Gradient descent is best used when the parameters cannot be calculated analytically and must be searched for by an optimization algorithm.
+13. Classification accuracy is almost universally inappropriate for imbalanced classification. 
+	The reason is, a high accuracy (or low error) is achievable by a no skill model that only predicts the majority class.
+14. F-Measure provides a way to combine both precision and recall into a single measure that captures both properties.
+	F measure is calculated as follows:
+	F-Measure = (2 * Precision * Recall) / (Precision + Recall)
+15. fit() - It is used for calculating the initial filling of parameters on the training data (like mean of the column values) and saves them as an internal objects state
+	transform() - Use the fit() calculated values and return modified training data
+	fit_transform() - It joins above two steps. Internally, it just calls first fit() and then transform() on the same data.
