@@ -1,0 +1,42 @@
+Deep-Learning-Worksheet-2
+
+1. C
+2. A
+3. C
+4. D
+5. C
+6. B
+7. C
+8. B
+9. A,B
+10. B,C,D
+11.
+12. The learning rate controls how quickly the model is adapted to the problem.
+	A learning rate that is too large can cause the model to converge too quickly to a suboptimal solution, 
+	whereas a learning rate that is too small can cause the process to get stuck.
+13.	For three inputs the number of combinations of 0 and 1 is 8:
+	x1 0 1 0 1 0 1 0 1
+	x2 0 0 1 1 0 0 1 1
+	x3 0 0 0 0 1 1 1 1
+	and for four inputs the number of combinations is 16:
+	x1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1
+	x2 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1
+	x3 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1
+	x4 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
+	You may check that for five inputs the number of combinations will be 32.
+	Note that 8 = 2(3), 16 = 2(4) and 32 = 2(5) 	(for three, four and five inputs).
+	Thus, the formula for the number of binary input patterns is:2(n) , where n in the number of inputs
+14.Vanishing Gradient :
+	In machine learning, the vanishing gradient problem is encountered when training artificial neural networks with gradient-based learning methods and backpropagation. 
+	In such methods, each of the neural network's weights receive an update proportional to the partial derivative of the error function with respect to the current weight in each iteration of training. 
+	The problem is that in some cases, the gradient will be vanishingly small, effectively preventing the weight from changing its value.
+	In the worst case, this may completely stop the neural network from further training.
+	Exploding Gradient :
+	Exploding gradients are a problem where large error gradients accumulate and result in very large updates to neural network model weights during training. 
+	This has the effect of your model being unstable and unable to learn from your training data.
+15. Epochs :
+	One Epoch is when an entire dataset is passed forward and backward through the neural network only once.
+	Batch :
+	Total number of training examples present in a single batch.
+	Iterations:
+	Iterations is the number of batches needed to complete one epoch.
