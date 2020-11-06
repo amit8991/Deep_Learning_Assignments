@@ -1,0 +1,36 @@
+DEEP-LEARNING-WORKSHEET-3
+
+1. B
+2. C
+3. B 
+4. D 
+5. C
+6. B
+7. B
+8. A
+9. B,C
+10. A,C
+11. Although linear transformations make the neural network simpler, but this network would be less powerful and will not be able to learn the complex patterns from the data. 
+	A neural network without an activation function is essentially just a linear regression model.
+	
+12. Forward propagation (or forward pass) refers to the calculation and storage of intermediate variables (including outputs) for a neural network in order from the input layer to the output layer
+	Backpropagation refers to the method of calculating the gradient of neural network parameters. In short, the method traverses the network in reverse order, from the output to the input layer, according to the chain rule from calculus.
+
+13. Stochastic Gradient Descent
+	In contrast to batch gradient descent, we can perform the stochastic gradient descent. This method can be considered as the opposite of the batch gradient.
+	For each instance, in the data, we again make a prediction, compare the prediction with the label, and calculate the gradient of the loss function.
+	In this case, however, we update the weights after each data instance has been processed by the neural network. This method is also often called as online learning. 
+	Mini-Batch Gradient Descent
+	For the mini-batch gradient descent, we must divide our training set into batches of size n.
+	Analogous to the batch gradient descent we compute and average the gradients across the data instance in a mini-batch. 
+	The gradient descent step is performed after each mini-batch of samples has been processed.
+	Batch Gradient Descent
+	Batch Gradient Descent involves calculations over the full training set at each step as a result of which it is very slow on very large training data. Thus, it becomes very computationally expensive to do Batch GD. 
+	However, this is great for convex or relatively smooth error manifolds. Also, Batch GD scales well with the number of features.
+
+14. Computational Efficiency: In terms of computational efficiency, this technique lies between the Stochastic and Batch Gradient techniques.
+	Stable Convergence: Another advantage is the more stable converge towards the global minimum since we calculate an average gradient over n samples that results in less noise.
+	Faster Learning: As we perform weight updates more often than with stochastic gradient descent, in this case, we achieve a much faster learning process.
+
+15. Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.
+	It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks .
