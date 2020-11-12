@@ -1,0 +1,20 @@
+WEB-SCRAPING-WORKSHEET-4
+
+1. C
+2. C
+3. C
+4. D
+5. D
+6. D
+7. B
+8. C
+9. B
+10. D
+11. B,C
+12. A
+13. C
+14. B
+15. find()：
+	Gets the first tag of the incoming HTML object that satisfies the condition and returns. A function of a label group or a single label.
+	findAll()：
+	Get all the conditions of the incoming HTML object and return it.
