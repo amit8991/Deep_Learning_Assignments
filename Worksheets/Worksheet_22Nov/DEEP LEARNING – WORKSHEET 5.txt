@@ -1,0 +1,32 @@
+DEEP LEARNING – WORKSHEET 5
+
+1. D
+2. C
+3. B
+4. A
+5. B 
+6. A
+7. C
+8. C
+9. A,D
+10. C,D
+
+11.Convex optimisation :
+	A convex optimisation problem is a problem where all of the constraints are convex functions, and the objective is a convex function if minimising, or a concave function if maximising.
+	A convex function can be described as a smooth surface with a single global minimum
+	Non convex optimisation :
+	In machine learning problems we come across loss surfaces which are non-convex in nature. Hence they will have multiple local minimum. 
+	Hence while solving for such non-convex problems it may be simpler and less computationally intensive if we “convexify” a problem, then to use non-convex optimisation.
+	
+12. Saddle points are the name given to points on the "minimization landscape" which are local minima on one axis but not on others. 
+	If we consider function minimization to be similar to the idea of completing a task in the real world,  saddle points can be considered as points where taking one particular type of action can no longer improve the result of the task, but where other types of actions can still lead to an improvement. 
+	Saddle points are not like local minima in that they are not "dead ends", and "exploitative" methods can still be effective when encountered them - as long as its are flexible enough to stop moving on the axis which has hit a minima and to start moving on the axis upon which there is still room for improvement.
+
+13. The difference between Nesterov and classical momentum is that Nesterov puts more weight on recent gradients. In fact, it gives zero weight to the first gradient descent direction after the first iteration, so the second step also be a pure gradient descent step, but with an extra step size of (1+μ)ε. 
+	Nesterov forgets old gradients more quickly.
+
+14.The aim of weight initialization is to prevent layer activation outputs from exploding or vanishing during the course of a forward pass through a deep neural network. 
+	If either occurs, loss gradients will either be too large or too small to flow backwards beneficially, and the network will take longer to converge, if it is even able to do so at all.
+
+15. Internal Covariance Shift as the change in the distribution of network activations due to the change in network parameters during training.
+	In neural networks, the output of the first layer feeds into the second layer, the output of the second layer feeds into the third, and so on

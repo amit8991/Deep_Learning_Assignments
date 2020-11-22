@@ -1,0 +1,19 @@
+PYTHON WORKSHEET – WORKSHEET 4
+
+1. B
+2. B
+3. B
+4. D
+5. C
+6. B
+7. C
+8. A
+9. A,B,D
+10. A,B,D
+11.	Interpreter translates just one statement of the program at a time into machine code. 
+	Compiler scans the entire program and translates the whole of it into machine code at once.
+12. PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages.
+13. Python String strip() function will remove leading and trailing whitespaces.
+	To remove only leading or trailing spaces, use lstrip() or rstrip().
+14.
+15.

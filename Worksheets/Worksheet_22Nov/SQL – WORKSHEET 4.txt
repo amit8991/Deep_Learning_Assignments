@@ -1,0 +1,82 @@
+SQL – WORKSHEET 4
+
+1.Write SQL query to show average number of orders shipped in a day (use Orders table)
+
+	select count(orderNumber),shippedDate,status from orders 
+	group by shippedDate
+	having status like '%Shipped%';
+	
+2.Write SQL query to show average number of orders placed in a day
+
+	select count(orderNumber),orderDate,status from orders group by orderDate;
+	
+3.Write SQL query to show the product name with minimum MSRP (use Products table)
+
+	select min(MSRP),productName from products;
+	
+4.Write SQL query to show the product name with maximum value of stockQuantity
+
+	select max(quantityInStock) , productName from products;
+	
+5.Write a query to show the most ordered product Name (the product with maximum number of orders)
+
+	select max(o.quantityOrdered),p.productName from orderdetails o , products p
+	where o.productCode = p.productCode;
+	
+6.Write a SQL query to show the highest paying customer Name.
+
+	select max(p.amount),c.customerName from customers c ,payments p
+	where c.customerNumber = p.customerNumber;
+	
+7.Write a SQL query to show cutomerNumber, customerName of all the customers who are from Melbourne city
+	
+	select customerNumber,customerName,city from customers where city='Melbourne';
+	
+8.Write a SQL query to show name of all the customers whose name start with “N”.
+
+	select * from customers where customerName like 'N%';
+	
+9.Write a SQL query to show name of all the customers whose phone start with ‘^7.*’ and are from city ‘Las Vegas’.
+	
+	select customerName,phone,city from customers where phone like '%7%' and city = 'Las Vegas';
+	
+10.Write a SQL query to show name of all the customers whose creditLimit < 1000 and city is either “Las Vegas”or ”Nantes” or “Stavern”
+
+	select customerName,city,creditLimit from customers where (city='Nantes' OR city ='Stavern' OR city ='Las Vegas')
+	and creditLimit<1000;
+	
+11.Write a SQL query to show all the orderNumber in which quantity ordered <10.
+	
+	select orderNumber,quantityOrdered from orderdetails where quantityOrdered<10;
+	
+12. Write a SQL query to show all the orderNumber whose customer Name start with letter N.
+
+	select o.orderNumber,c.customerName from customers c , orders o
+	where c.customerNumber = o.customerNumber
+	and c.customerName like 'N%';
+
+13.Write a SQL query to show all the customerName whose orders are “Disputed” in status.
+
+	select o.orderNumber,c.customerName,o.status from customers c , orders o
+	where c.customerNumber = o.customerNumber
+	and o.status = 'Disputed';
+
+14.Write a SQL query to show the customerName who made payment through cheque with checkNumber starting with H and made payment on “2004-10-19”
+
+	select c.customerName,p.checkNumber,p.paymentDate from customers c , payments p
+	where c.customerNumber = p.customerNumber
+	and p.checkNumber like 'H%'
+	and p.paymentDate = '2004-10-19';
+	
+15.Write a SQL query to show all the checkNumber whose amount > 1000.
+
+	select checkNumber,amount from payments where amount >1000;
+
+
+
+
+
+
+
+
+
