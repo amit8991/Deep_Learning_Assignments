@@ -1,0 +1,21 @@
+STATISTICS-WORKSHEET-6
+
+1. b
+2. c
+3. a
+4. a
+5. c
+6. b
+7. b 
+8. d
+9. a
+
+10. Bayes Theorem :
+	Bayes' theorem is a formula that describes how to update the probabilities of hypotheses when given evidence. 
+	It follows simply from the axioms of conditional probability, but can be used to powerfully reason about a wide range of problems.
+
+11. Z-score :  It’s a measure of how many standard deviations below or above the population mean a raw score is.
+12. T-test : The t test tells how significant the differences between groups are; In other words it lets you know if those differences (measured in means) could have happened by chance.
+13. Percentile : Percentiles indicate the percentage of scores that fall below a particular value. They tell you where a score stands relative to other scores.
+14. An ANOVA test is a way to find out if survey or experiment results are significant.
+15. An ANOVA test helps to figure out if you need to reject the null hypothesis or accept the alternate hypothesis.
