@@ -1,0 +1,21 @@
+PYTHON – WORKSHEET 5
+
+1. C
+2. D
+3. B
+4. D
+5. C
+6. D
+7. B
+8. C
+9. D
+10.D
+11.List :
+	1.Lists is Mutable
+	2.It is Ordered collection of items
+	3.Items in list can be replaced or changed
+	
+	Set :
+	1.Set is Mutable
+	2.It is Unordered collection of items
+	3.Items in set cannot be changed or replaced
