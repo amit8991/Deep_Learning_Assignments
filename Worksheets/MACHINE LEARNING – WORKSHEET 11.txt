@@ -1,0 +1,34 @@
+MACHINE LEARNING – WORKSHEET 11
+
+1. B
+2. B
+3. A
+4. C
+5. B
+6. A
+7. B
+8. A
+9. A,B
+10. A,C,D
+11. A,B
+
+12.R2 shows how well terms (data points) fit a curve or line. 
+Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. 
+If you add more and more useless variables to a model, adjusted r-squared will decrease. If you add more useful variables, adjusted r-squared will increase.
+Adjusted R2 will always be less than or equal to R2.
+
+13.A cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. 
+This is typically expressed as a difference or distance between the predicted value and the actual value.
+The cost function can be estimated by iteratively running the model to compare estimated predictions against the known values of y.
+
+14. SST is the squared differences between the observed dependent variable and its mean.
+	SSR is the sum of the differences between the predicted value and the mean of the dependent variable.
+	SSE is the difference between the observed value and the predicted value.
+	SST = SSR + SSE
+	
+15.The evaluation metrics for linear regression are :MSE, MAE, R-squared, Adjusted R-squared, and RMSE
+	Mean Squared Error (MSE):It is the average of the squared difference between the predicted and actual value.
+	Mean Absolute Error (MAE) : This is simply the average of the absolute difference between the target value and the value predicted by the model.
+	R-squared : This metric represents the part of the variance of the dependent variable explained by the independent variables of the model. 
+				It measures the strength of the relationship between your model and the dependent variable.
+	Root Mean Squared Error (RMSE) : This is the square root of the average of the squared difference of the predicted and actual value.
